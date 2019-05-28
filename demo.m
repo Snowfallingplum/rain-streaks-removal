@@ -5,12 +5,12 @@ path(path,genpath(pwd));
 %%%--- Load Video ---%%%
 %Assume that the number of rows and columns in the picture are equal
 frames = 30;
-load girl_rainy_45_light.mat
+load girl_rainy_45_heavy.mat
 Rainy=Rainy(1:240,1:240,:,1:frames);
 load girl_clean.mat
 B_clean = B_clean(1:240,1:240,:,1:frames);
 methodname{1}='   Rainy      ';
-methodname{2}='CVPR2017';
+methodname{2}='DTV';
 padsize=5;
 %%
 %implay(Rainy);implay(B_clean);
